@@ -6,7 +6,6 @@ import { Stack } from 'expo-router';
 export default function OrdersScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Orders' }} />
       <FlatList
         data={orders}
         contentContainerStyle={{ gap: 10, padding: 10 }}
