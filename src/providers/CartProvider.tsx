@@ -1,6 +1,9 @@
 import { createContext, PropsWithChildren, useContext, useState } from "react";
-import { CartItem, Product } from "@assets/types";
+import { CartItem } from "@assets/types";
 import { randomUUID } from "expo-crypto";
+import { Tables } from "@/types";
+
+type Product = Tables<'products'>;
 
 type CartType = {
   items: CartItem[];
